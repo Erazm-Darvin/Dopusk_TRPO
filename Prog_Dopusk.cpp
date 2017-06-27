@@ -24,13 +24,13 @@ int	main() {
 	}
 
 void Math(double a, double b, double c) {
-	double x;
+	double x1, double x2;
 
     if((b*b - 4*a*c) >= 0) { //Если дискриминант больше или равен 0
-    	x = ( -1*b + sqrt(b*b - 4*a*c) ) / (2 * a);
-	cout << "Первый корень равен " << x ;
-    	x = ( -1*b - sqrt(b*b - 4*a*c) ) / (2 * a);
-	cout << "Второй корень равен " << x ;
+    	x1 = ( -1*b + sqrt(b*b - 4*a*c) ) / (2 * a);
+	cout << "Первый корень равен " << x1 ;
+    	x2 = ( -1*b - sqrt(b*b - 4*a*c) ) / (2 * a);
+	cout << "Второй корень равен " << x2 ;
 	}
 	else
 	{
