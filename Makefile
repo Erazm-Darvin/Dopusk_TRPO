@@ -12,8 +12,7 @@ build/main.o: src/main.c src/function.h
 build/function.o: src/function.c src/function.h 
 	@gcc $(CFLAGS) -c src/function.c -o build/function.o
 
-test: 
-	make bin/Quard_test
+test: bin/Quard_test
 	bin/Quard_test 
 
 bin/Quard_test: build/test/main.o build/test/function_test.o
