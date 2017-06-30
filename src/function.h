@@ -1,14 +1,14 @@
 #ifndef FUNCTION_H
 #define FUNCTION_H
 
-void Math(float a, float b, float c);
+float Discriment(float a, float b, float c);
 
-void Diskreminant(float a, float b, float c);
+int Proverka(float D);
 
-void Koren_Ur_1(float a, float b, float c);
+float Answer1(float a, float b, float D);
 
-void Koren_Ur_2(float a, float b, float c);
+float Answer2(float a, float b, float D);
 
-int Proverka(float d);
+float Answer3(float a, float b, float D);
 
 #endif
