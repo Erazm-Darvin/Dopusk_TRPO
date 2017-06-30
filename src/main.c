@@ -17,16 +17,16 @@ int main ()
 	i = Proverka(D);
 	switch (i) {
 		case 0:
-			x = Answer1(a, b, D);
+			x = Koren_Ur1(a, b, D);
 			printf ("%.2f",x);
 			break;
 		case 1:
 			printf("Has no roots");
 			break;
 		case 2:
-			x = Answer2(a, b, D);
+			x = Koren_Ur2(a, b, D);
 			printf ("%.2f\n",x);
-			x = Answer3(a, b, D);
+			x = Koren_Ur3(a, b, D);
 			printf ("%.2f",x);
 			break;
 	}

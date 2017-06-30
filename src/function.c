@@ -21,19 +21,19 @@ float Discriment(float a,float b, float c)
 	return D;
 }
 
-float Answer1(float a, float b, float D)
+float Koren_Ur1(float a, float b, float D)
 {
 	float x = ((-1)*b) / (2 * a);
 	return x;
 }
 
-float Answer2(float a, float b, float D)
+float Koren_Ur2(float a, float b, float D)
 {
 float x = ((-1)* b + sqrt(D)) / (2 * a);
 	return x;
 }
 
-float Answer3(float a, float b, float D)
+float Koren_Ur3(float a, float b, float D)
 {
 	float x = ((-1)* b - sqrt(D)) / (2 * a); 
 	return x;

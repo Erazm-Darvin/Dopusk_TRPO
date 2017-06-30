@@ -56,36 +56,36 @@ CTEST(Discriment, input_floats_numbers)
     ASSERT_DBL_NEAR(expected, result);
 }
 
-CTEST(Answer1, input_1_3_0)
+CTEST(Koren_Ur1, input_1_3_0)
 {
-    float result = Answer1(1, 3, 0);
+    float result = Koren_Ur1(1, 3, 0);
 	
     float expected = -1.5;
 	
     ASSERT_EQUAL(expected, result);
 }
 
-CTEST(Answer2, input_4_21_361)
+CTEST(Koren_Ur2, input_4_21_361)
 {
-    float result = Answer2(4, 21, 361);
+    float result = Koren_Ur2(4, 21, 361);
 	
     float expected = -0.25;
 	
      ASSERT_DBL_NEAR(expected, result);
 }
 
-CTEST(Answer3, input_4_21_361)
+CTEST(Koren_Ur3, input_4_21_361)
 {
-    float result = Answer3(4, 21, 361);
+    float result = Koren_Ur3(4, 21, 361);
 	
     float expected = -5;
 	
      ASSERT_DBL_NEAR(expected, result);
 }
 
-CTEST(Answer1, input_floats_numbers)
+CTEST(Koren_Ur1, input_floats_numbers)
 {
-    float result = Answer2(1.53125, 3.5, 0);
+    float result = Koren_Ur2(1.53125, 3.5, 0);
 	
     float expected = -1.142857143;
 	
