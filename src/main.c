@@ -20,26 +20,21 @@ int main ()
 	switch (i) {
 		case 1:
 			{x = Koren_Ur1(a, b, D);
-			printf ("%.2f",x);
-			}
+			printf ("%.2f",x);}
 			break;
 		case 0:
 			{printf("выражение не имеет смысла");}
 			break;
-		case 2:
-			{x = Koren_Ur2(a, b, D);
+		case 2:{x = Koren_Ur2(a, b, D);
 			printf ("%.2f\n",x);
 			x = Koren_Ur3(a, b, D);
-			printf ("%.2f\n",x);
-			}
+			printf ("%.2f\n",x);}
 			break;
 		case 3:{ x = -1*(c/b);
-            printf ("%.2f\n",x);
-		    } 
+            printf ("%.2f\n",x);} 
             break;
 		case 4:{ x = sqrt((-1*c)/a); 
-            printf ("%.2f\n",x);          
-            }
+            printf ("%.2f\n",x);}
             break;
 	}
 	return 0;
