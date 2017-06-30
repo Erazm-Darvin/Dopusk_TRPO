@@ -2,29 +2,29 @@
 #include <../src/function.h>
 #include <math.h>
 
-CTEST(Proverka, input_1)
+CTEST(Proverka, input_1_1_1)
 {
-    int result = Proverka(1);
-	
-    int expected = 2;
-	
-    ASSERT_EQUAL(expected, result);
-}
-
-CTEST(Proverka, input_minus_1)
-{
-    int result = Proverka(-1);
-	
-    int expected = 1;
-	
-    ASSERT_EQUAL(expected, result);
-}
-
-CTEST(Proverka, input_0)
-{
-	int result = Proverka(0);
+    int result = Proverka(1, 1, 1);
 	
     int expected = 0;
+	
+    ASSERT_EQUAL(expected, result);
+}
+
+CTEST(Proverka, input_2_0_minus_2)
+{
+    int result = Proverka(2, 0, -2);
+	
+    int expected = 4;
+	
+    ASSERT_EQUAL(expected, result);
+}
+
+CTEST(Proverka, input_1_3_2)
+{
+	int result = Proverka(1, 3, 2);
+	
+    int expected = 2;
 	
     ASSERT_EQUAL(expected, result);
 }
@@ -91,3 +91,5 @@ CTEST(Koren_Ur1, input_floats_numbers)
 	
      ASSERT_DBL_NEAR(expected, result);
 }
+
+

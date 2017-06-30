@@ -3,7 +3,7 @@
 
 float Discriment(float a, float b, float c);
 
-int Proverka(float D);
+int Proverka(float a, float b, float c);
 
 float Koren_Ur1(float a, float b, float D);
 

@@ -13,22 +13,34 @@ int main ()
 	scanf("%f",&b);
 	printf("c = ");
 	scanf("%f",&c);
+	
+	i = Proverka(a,b,c);
 	D = Discriment(a,b,c);
-	i = Proverka(D);
+
 	switch (i) {
-		case 0:
-			x = Koren_Ur1(a, b, D);
-			printf ("%.2f",x);
-			break;
 		case 1:
-			printf("Has no roots");
+			{x = Koren_Ur1(a, b, D);
+			printf ("%.2f",x);
+			}
+			break;
+		case 0:
+			{printf("выражение не имеет смысла");}
 			break;
 		case 2:
-			x = Koren_Ur2(a, b, D);
+			{x = Koren_Ur2(a, b, D);
 			printf ("%.2f\n",x);
 			x = Koren_Ur3(a, b, D);
-			printf ("%.2f",x);
+			printf ("%.2f\n",x);
+			}
 			break;
+		case 3:{ x = -1*(c/b);
+            printf ("%.2f\n",x);
+		    } 
+            break;
+		case 4:{ x = sqrt((-1*c)/a); 
+            printf ("%.2f\n",x);          
+            }
+            break;
 	}
 	return 0;
 }
