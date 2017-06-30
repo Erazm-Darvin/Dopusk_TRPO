@@ -2,5 +2,5 @@ language: c++
 
 compiler: g++
 
-script: make && test
+script: make && make test
 
